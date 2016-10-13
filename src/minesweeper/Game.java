@@ -6,7 +6,10 @@ public class Game {
 	private int side= 9;
 	private int limit= side-1;
 	
-	public void setGame() {
+	public void setGame(){
+		JFrame frame = new JFrame(); 
+		
+		
 		
 	}
 	
