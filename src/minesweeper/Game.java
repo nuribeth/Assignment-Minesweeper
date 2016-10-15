@@ -1,6 +1,7 @@
 package minesweeper;
 
 import java.awt.GridLayout;
+import java.awt.List;
 import java.util.ArrayList;
 
 import javax.swing.JFrame;
@@ -39,14 +40,14 @@ public class Game {
     }
 
     public void plantMines(){
-        ArrayList<Integer> loc = generateMinesLocation(10);
+        List<Integer> loc = generateMinesLocation(10);
         for(int i : loc){
             getCell(i).setValue(-1);
         }
     }
     //random mines
-    public ArrayList<Integer> generateMinesLocation(int q){
-        ArrayList<Integer> loc = new ArrayList<Integer>();
+    public List<Integer> generateMinesLocation(int q){
+        List<Integer> loc = new List<Integer>();
         int random;
         for(int i = 0; i<q;){
             random = (int)(Math.random()* (side*side));
